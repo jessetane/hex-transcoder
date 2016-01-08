@@ -1,4 +1,4 @@
-var encodeLookup = '0123456789abcdef'
+var encodeLookup = '0123456789abcdef'.split('')
 var decodeLookup = []
 var i = 0
 while (i < 10) decodeLookup[0x30 + i] = i++

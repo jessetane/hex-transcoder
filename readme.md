@@ -16,7 +16,7 @@ encode (node Buffer): 27.457ms
 decode (node Buffer): 25.970ms
 encode (toString): 634.838ms
 decode (parseInt): 296.277ms
-encode (this module): 108.095ms
+encode (this module): 95.979ms
 decode (this module): 31.605ms
 ```
 
