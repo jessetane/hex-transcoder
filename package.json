@@ -10,6 +10,7 @@
     "get-random-values": "^1.2.0",
     "tape": "^4.4.0"
   },
+  "repository": "https://github.com/jessetane/hex-string",
   "author": "jesse.tane@gmail.com",
   "license": "Public domain"
 }
