@@ -7,7 +7,7 @@
     "bench": "node bench"
   },
   "devDependencies": {
-    "get-random-values": "^1.1.1",
+    "get-random-values": "^1.2.0",
     "tape": "^4.4.0"
   },
   "author": "jesse.tane@gmail.com",
