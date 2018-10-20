@@ -34,11 +34,11 @@ console.log(n + ' trials, 1024 bytes per trial')
 // Buffer
 console.time('encode (node Buffer)')
 i = n
-while (i--) x = Buffer(r).toString('hex')
+while (i--) x = Buffer.from(r).toString('hex')
 console.timeEnd('encode (node Buffer)')
 console.time('decode (node Buffer)')
 i = n
-while (i--) Buffer(x, 'hex')
+while (i--) Buffer.from(x, 'hex')
 console.timeEnd('decode (node Buffer)')
 
 // toString / parseInt
