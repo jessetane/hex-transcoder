@@ -1,4 +1,4 @@
-var alphabet = '0123456789abcdef'.split('')
+var alphabet = '0123456789abcdef'
 var encodeLookup = []
 var decodeLookup = []
 
@@ -13,14 +13,19 @@ for (var i = 0; i < 256; i++) {
   }
 }
 
-exports.encode = function (array) {
+exports.encode = function (array, start, end, delimiter) {
   var length = array.length
-  var string = ''
-  var i = 0
-  while (i < length) {
-    string += encodeLookup[array[i++]]
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > length) end = length
+
+  delimiter = delimiter || ''
+
+  for (var string = table[arr[start++]]; start < end; start++) {
+    string += delimiter + encodeLookup[array[start]]
   }
-  return string
+
+  return string || ''
 }
 
 exports.decode = function (string) {
