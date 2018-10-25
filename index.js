@@ -21,7 +21,7 @@ exports.encode = function (array, start, end, delimiter) {
 
   delimiter = delimiter || ''
 
-  for (var string = table[arr[start++]]; start < end; start++) {
+  for (var string = encodeLookup[arr[start++]]; start < end; start++) {
     string += delimiter + encodeLookup[array[start]]
   }
 
