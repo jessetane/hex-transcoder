@@ -13,6 +13,12 @@ for (var i = 0; i < 256; i++) {
   }
 }
 
+/**
+ * Encode a Uint8Array to a hex string
+ * 
+ * @param  {Uint8Array} array Bytes to encode to string
+ * @return {String}           hex string
+ */
 exports.encode = function (array) {
   var length = array.length
   var string = ''
@@ -23,6 +29,12 @@ exports.encode = function (array) {
   return string
 }
 
+/**
+ * Decodes a hex string to a Uint8Array
+ * 
+ * @param  {String} string hex string to decode to Uint8Array
+ * @return {Uint8Array}    Uint8Array
+ */
 exports.decode = function (string) {
   var sizeof = string.length >> 1
   var length = sizeof << 1
