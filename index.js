@@ -1,4 +1,4 @@
-var alphabet = '0123456789abcdef'.split('')
+var alphabet = '0123456789abcdef'
 var encodeLookup = []
 var decodeLookup = []
 
@@ -19,7 +19,7 @@ for (var i = 0; i < 256; i++) {
  * @param  {Uint8Array} array Bytes to encode to string
  * @return {String}           hex string
  */
-exports.encode = function (array) {
+export function encode (array) {
   var length = array.length
   var string = ''
   var i = 0
@@ -35,7 +35,7 @@ exports.encode = function (array) {
  * @param  {String} string hex string to decode to Uint8Array
  * @return {Uint8Array}    Uint8Array
  */
-exports.decode = function (string) {
+export function decode (string) {
   var sizeof = string.length >> 1
   var length = sizeof << 1
   var array = new Uint8Array(sizeof)
@@ -46,3 +46,5 @@ exports.decode = function (string) {
   }
   return array
 }
+
+export default { encode, decode }

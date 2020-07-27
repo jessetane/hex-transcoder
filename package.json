@@ -1,16 +1,23 @@
 {
-  "name": "hex-string",
+  "name": "hex-transcoder",
   "version": "1.0.3",
   "description": "Fast hex / binary transcoding in pure JavaScript",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./": "./"
+  },
   "scripts": {
     "test": "node test",
-    "bench": "node bench"
+    "test-browser": "ecstatic --cache no-cache --port 7357 test",
+    "bench": "node bench",
+    "bench-browser": "ecstatic --cache no-cache --port 8080 bench"
   },
   "devDependencies": {
-    "get-random-values": "^1.2.0",
-    "tape": "^4.4.0"
+    "ecstatic": "^4.1.4",
+    "tap-esm": "^1.2.0"
   },
-  "repository": "https://github.com/jessetane/hex-string",
+  "repository": "https://github.com/jessetane/hex-transcoder",
   "author": "jesse.tane@gmail.com",
-  "license": "Public domain"
+  "license": "MIT"
 }
