@@ -5,7 +5,7 @@ import crypto from 'crypto'
 var c = 1024 * 16
 var r = crypto.randomBytes(c).buffer
 var i, x, n = 0x10000
-console.log(`${n} trials, ${c} bytes per trial`)
+console.log(`${n} trials, ${c} bytes per trial (${process.version})`)
 
 // Buffer
 if (typeof window === 'undefined') {

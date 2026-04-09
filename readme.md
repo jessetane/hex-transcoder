@@ -11,13 +11,13 @@ $ npm run bench
 > hex-transcoder@2.0.0 bench hex-transcoder
 > node bench
 
-65536 trials, 16384 bytes per trial
-encode (node Buffer): 5.644s
-decode (node Buffer): 9.227s
-encode (toString): 13.067ms
-decode (parseInt): 26.282ms
-encode (this module): 14.23ms
-decode (this module): 23.725ms
+65536 trials, 16384 bytes per trial (v25.9.0)
+encode (node Buffer): 99.945ms
+decode (node Buffer): 601.284ms
+encode (toString): 0.407ms
+decode (parseInt): 1.744ms
+encode (this module): 0.304ms
+decode (this module): 1.555ms
 ```
 
 ## How
